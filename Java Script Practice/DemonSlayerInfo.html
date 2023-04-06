@@ -1,5 +1,6 @@
 <html>
 <body>
+     <!-- JS Introduction -->
     <h1 id="dsmhead">Demon Slayer</h1>
     <p id="dslayer">Information</p>
     <button onclick="document.getElementById('dslayer').innerHTML = 'Demon slayer is a a Japanese comic that starts from 02/15/16 and ended on 05/18/20';">CLick this for more information</button>
@@ -13,14 +14,21 @@
     <p id="ctwd" style="display: none;">Demon slayer is the best anime!</p>
     <button onclick="document.getElementById('ctwd').style.display = 'block'">Click here to show the hidden content</button>
     <br>
-    <!-- Introduction of JS -->
-
-    <head>
-        <script>
-            function practice1function(){
-                document.getElementById('img1dmp').innerHTML = "dsmhead";
-            }
-        </script>
-    </head>
+    <hr>
+    <!-- JS Where To-->
+    <p id="scriptp1">Practice for scrpit & function</p>
+    <p id="exfp1">Practice for external file</p>
+    <script>
+        function p1function(){
+            document.getElementById('scriptp1').innerHTML = 'This is a practice'
+        }
+    </script>
+    <button type="button" onclick="p1function()">Click this button</button>
+    <button type="button" onclick="exfilefunction1()">Button to change "Practice for external file"</button>
+    <hr>
+    <!-- JS Output -->
+    <p id="pfhtml"></p>
+    
 </body>
+<script src="/DsExternalFileP.js"></script>
 </html>
