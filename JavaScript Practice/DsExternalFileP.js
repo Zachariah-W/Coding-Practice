@@ -31,3 +31,50 @@ function var2Function(){
      document.getElementById('vpf2').innerHTML = x;
      document.getElementById('vpf3').innerHTML = y;
 }
+function dt1Function(){
+     let x = 24 + "Fire";
+     document.getElementById('dtp1').innerHTML = x;
+     console.log("Function Works")
+}
+function dt2Function(){
+     let x = 1, y = 2, z = 1;
+     document.getElementById('dtp2').innerHTML = 
+     (x == z) + "<br>" + (y == z);
+}
+function dt3Function(){
+     const attack = ["water", "fire", "sound", "wind"]
+     document.getElementById('dtp3').innerHTML = attack[0] + " " + attack[3]
+}
+function dt4Function(){
+     const Demon = {
+          Name : "Akaza",
+          Age : "???",
+          Rank : "Upper Moon 3"
+     }
+     document.getElementById('dtp4').innerHTML = 
+     Demon.Name + " is " + Demon.Age + " " + " years old, and is rank as " + Demon.Rank + " in the Demons.";
+}
+function tfFunction(){
+     document.getElementById('dtp5').innerHTML = 
+     typeof "Blade" + typeof 20;
+}
+function fFunction(f1, f2){
+     return f1 + f2;
+}
+document.getElementById('pf1').innerHTML = fFunction(5, 6);
+document.getElementById('pf2').innerHTML = fFunction(7, 8);
+
+let ppff = f2Function(5, 7);
+document.getElementById('pf3').innerHTML = ppff;
+function f2Function(ff1, ff2){
+     return ff1 * ff2;
+}
+
+function f3Function(s){
+     return s/5 + s/2;
+}
+document.getElementById('pf4').innerHTML = f3Function(20);
+document.getElementById('pf5').innerHTML = "The answer to 40/5 + 40/2 is " + f3Function(40);
+
+const slayer = {name: "Demon Slayer", topSlayernum: "9"}
+document.getElementById('obpf1').innerHTML = "The number of Hashira in DS is " + slayer.topSlayernum;
