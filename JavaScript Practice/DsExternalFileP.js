@@ -76,5 +76,35 @@ function f3Function(s){
 document.getElementById('pf4').innerHTML = f3Function(20);
 document.getElementById('pf5').innerHTML = "The answer to 40/5 + 40/2 is " + f3Function(40);
 
-const slayer = {name: "Demon Slayer", topSlayernum: "9"}
+const slayer = {
+     name: "Demon Slayer", 
+     topSlayernum: 9
+};
 document.getElementById('obpf1').innerHTML = "The number of Hashira in DS is " + slayer.topSlayernum;
+
+const demon = {
+     upperMoon1 : "Kokushibo",
+     upperMoon2 : "Doma",
+     upperMoon3 : "Akaza",
+     upperMoon1Lvl : function(){
+          return this.upperMoon2 + " + " + this.upperMoon3;
+     }
+};
+document.getElementById('obpf2').innerHTML = demon.upperMoon1Lvl();
+
+function pftextc(){
+     let x = "totofnine";
+     document.getElementById('ctext').innerHTML = x.length; 
+}
+
+function pslisotext(){
+     let x = "Ismelldemon";
+     let y = x.slice(1, 6);
+     document.getElementById('slitext').innerHTML = y;
+}
+
+function psubstotext(){
+     let x = "Ismelldemon";
+     let y = x.substring(1,6 );
+     document.getElementById('slitext').innerHTML = y;
+}
