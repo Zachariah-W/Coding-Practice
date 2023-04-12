@@ -108,3 +108,13 @@ function psubstotext(){
      let y = x.substring(1,6 );
      document.getElementById('slitext').innerHTML = y;
 }
+
+function rplacFunction(){
+     let x = document.getElementById('rplatext').innerHTML;
+     document.getElementById('rplatext').innerHTML = x.replace('3','2')
+}
+
+function reallFunction(){
+     let x =document.getElementById('reallp').innerHTML;
+     document.getElementById('reallp').innerHTML = x.replaceAll('2','3')
+}
